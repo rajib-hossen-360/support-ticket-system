@@ -14,26 +14,24 @@ export default function App() {
   const [inProgressTasks, setInProgressTasks] = useState([]);
   const [resolvedTasks, setResolvedTasks] = useState([]);
 
-  //Card a click korle Inprogress a add hve 
   const handleSelectTicket = (ticket) => {
     if (inProgressTasks.some((t) => t.id === ticket.id)) {
-      toast.warning("This ticket is already in progress!");
+      toast.warning("Ticket already in progress!");
       return;
     }
     setInProgressTasks([...inProgressTasks, ticket]);
     toast.info(`Task "${ticket.title}" added to Task Status!`);
   };
 
-  // Complete btn a click korle Resolved a cole jave
   const handleCompleteTask = (task) => {
     setInProgressTasks(inProgressTasks.filter((t) => t.id !== task.id));
     setTickets(tickets.filter((t) => t.id !== task.id));
     setResolvedTasks([...resolvedTasks, task]);
-    toast.success(`Task "${task.title}" marked as resolved!`);
+    toast.success(`Task "${task.title}" resolved successfully!`);
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-between font-sans">
+    <div className="min-h-screen bg-[#F9FAFB] flex flex-col justify-between font-sans">
       <div>
         <Navbar />
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,10 +40,10 @@ export default function App() {
             resolvedCount={resolvedTasks.length} 
           />
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 my-8">
-            {/* Left 2 Columns: Customer Tickets List */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 my-8 items-start">
+            {/* Left 2 Columns Grid for Customer Tickets */}
             <div className="lg:col-span-2">
-              <h2 className="text-xl font-bold text-gray-800 mb-4">Customer Tickets</h2>
+              <h2 className="text-base font-bold text-gray-900 mb-4">Customer Tickets</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {tickets.map((ticket) => (
                   <TicketCard 
@@ -57,8 +55,8 @@ export default function App() {
               </div>
             </div>
 
-            {/* Right Column: Task Status & Resolved Sections */}
-            <div>
+            {/* Right Column for Sidebar Task Status */}
+            <div className="lg:col-span-1">
               <TaskStatus 
                 taskList={inProgressTasks} 
                 resolvedList={resolvedTasks} 
