@@ -4,33 +4,31 @@ A modern, responsive, and dynamic Customer Support Ticket Tracking Application b
 
 ---
 
-## 🔗 Live Demo & Links
+### 🔗 Live Demo & Links
 
-* **Live Demo:** Add your Vercel deployment URL here
-* **GitHub Repository:** https://github.com/rajib-hossen-360/support-ticket-system
-
----
+- **Live Demo:** [https://support-ticket-system-kappa-pearl.vercel.app](https://support-ticket-system-kappa-pearl.vercel.app)
+- **GitHub Repository:** [https://github.com/rajib-hossen-360/support-ticket-system](https://github.com/rajib-hossen-360/support-ticket-system)
 
 ## ✨ Features
 
-* **Interactive Ticket Dashboard:** Displays customer support tickets in a clean and responsive grid layout.
-* **Dynamic Task Status Tracking:** Click any ticket to add it to the active **Task Status** section.
-* **Interactive Counters:** The banner dynamically displays **In Progress** and **Resolved** ticket counts.
-* **Task Resolution Workflow:** Mark a task as complete to move it to the **Resolved Task** section and remove it from the active ticket list.
-* **Duplicate Ticket Prevention:** Prevents the same ticket from being added to the active task list multiple times.
-* **Toast Notifications:** Uses **React-Toastify** to provide instant feedback for ticket actions.
-* **Responsive Design:** Optimized for mobile, tablet, and desktop screen sizes.
+- **Interactive Ticket Dashboard:** Displays customer support tickets in a clean and responsive grid layout.
+- **Dynamic Task Status Tracking:** Click any ticket to add it to the active **Task Status** section.
+- **Interactive Counters:** The banner dynamically displays **In Progress** and **Resolved** ticket counts.
+- **Task Resolution Workflow:** Mark a task as complete to move it to the **Resolved Task** section and remove it from the active ticket list.
+- **Duplicate Ticket Prevention:** Prevents the same ticket from being added to the active task list multiple times.
+- **Toast Notifications:** Uses **React-Toastify** to provide instant feedback for ticket actions.
+- **Responsive Design:** Optimized for mobile, tablet, and desktop screen sizes.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** React
-* **Build Tool:** Vite
-* **Styling:** Tailwind CSS
-* **Notifications:** React-Toastify
-* **Data:** JSON mock ticket data
-* **Deployment:** Vercel
+- **Frontend:** React
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **Notifications:** React-Toastify
+- **Data:** JSON mock ticket data
+- **Deployment:** Vercel
 
 ---
 
@@ -40,30 +38,35 @@ A modern, responsive, and dynamic Customer Support Ticket Tracking Application b
 
 ```bash
 git clone https://github.com/rajib-hossen-360/support-ticket-system.git
+
 ```
 
 ### 2. Navigate to the Project
 
 ```bash
 cd support-ticket-system
+
 ```
 
 ### 3. Install Dependencies
 
 ```bash
 npm install
+
 ```
 
 ### 4. Start the Development Server
 
 ```bash
 npm run dev
+
 ```
 
 Open the local development URL shown in your terminal, usually:
 
 ```text
 http://localhost:5173/
+
 ```
 
 ---
@@ -84,6 +87,7 @@ src/
 │
 ├── App.jsx
 └── main.jsx
+
 ```
 
 ---
