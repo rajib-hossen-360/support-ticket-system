@@ -1,16 +1,96 @@
-# React + Vite
+# 🎫 Customer Support Zone — CS Ticket System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive, and dynamic Customer Support Ticket Tracking Application built with **React**, **Vite**, and **Tailwind CSS**. This application allows support agents to view, manage, track, and resolve customer support tickets in real time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Live Demo & Links
 
-## React Compiler
+* **Live Demo:** Add your Vercel deployment URL here
+* **GitHub Repository:** https://github.com/rajib-hossen-360/support-ticket-system
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+* **Interactive Ticket Dashboard:** Displays customer support tickets in a clean and responsive grid layout.
+* **Dynamic Task Status Tracking:** Click any ticket to add it to the active **Task Status** section.
+* **Interactive Counters:** The banner dynamically displays **In Progress** and **Resolved** ticket counts.
+* **Task Resolution Workflow:** Mark a task as complete to move it to the **Resolved Task** section and remove it from the active ticket list.
+* **Duplicate Ticket Prevention:** Prevents the same ticket from being added to the active task list multiple times.
+* **Toast Notifications:** Uses **React-Toastify** to provide instant feedback for ticket actions.
+* **Responsive Design:** Optimized for mobile, tablet, and desktop screen sizes.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS
+* **Notifications:** React-Toastify
+* **Data:** JSON mock ticket data
+* **Deployment:** Vercel
+
+---
+
+## 🚀 Local Development Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/rajib-hossen-360/support-ticket-system.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd support-ticket-system
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the Development Server
+
+```bash
+npm run dev
+```
+
+Open the local development URL shown in your terminal, usually:
+
+```text
+http://localhost:5173/
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Banner.jsx
+│   ├── Footer.jsx
+│   ├── Navbar.jsx
+│   ├── TaskStatus.jsx
+│   └── TicketCard.jsx
+│
+├── data/
+│   └── tickets.json
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 👨‍💻 Author
+
+**Rajib Hossen**
+
+CSE Student
+Bangladesh University
