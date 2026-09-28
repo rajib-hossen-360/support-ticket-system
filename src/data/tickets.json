@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Login Issue - Card Declined",
+    "description": "Customer facing payment failure during checkout using debit card.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-09-20"
+  },
+  {
+    "id": 2,
+    "title": "Incorrect Billing Address",
+    "description": "User wants to update shipping and billing information.",
+    "customer": "Jane Smith",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2026-09-21"
+  },
+  {
+    "id": 3,
+    "title": "App Crash on Launch",
+    "description": "App closes unexpectedly after tapping the splash screen on iOS.",
+    "customer": "Alex Mercer",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2026-09-22"
+  },
+  {
+    "id": 4,
+    "title": "Two-Factor Auth Issue",
+    "description": "OTP sms is not delivering to user phone number.",
+    "customer": "Sarah Connor",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2026-09-23"
+  },
+  {
+    "id": 5,
+    "title": "Subscription Auto-Renewal Failed",
+    "description": "User account was downgraded due to payment gateway timeout.",
+    "customer": "Michael Scott",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2026-09-24"
+  },
+  {
+    "id": 6,
+    "title": "Unable to Upload Profile Picture",
+    "description": "Getting 413 Payload Too Large error when uploading PNG images.",
+    "customer": "Dwight Schrute",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2026-09-25"
+  }
+]
